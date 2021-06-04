@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="active">
+                        <a href="registrar.html">Registrar Nuevo alquiler</a>
+                    </li>
+                    <li class="">
+                        <a href="recaudadacion.html">Recaudación de ciudades</a>
+                    </li>
+                    <li class="">
+                        <a href="menor.html">Menor Facturación</a>
+                    </li>
+                    <li class="">
+                        <a href="porcentaje.html">Porcenataje de Facturación</a>
+                    </li>
+                    <li class="">
+                        <a href="orden.html">Orden de recaudacion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sistema registrar">
+            <div class="registro">
+                <div class="titulo-reg">
+                    <h3>Datos del Alquiler</h3>
+                </div>
+                <div class="form">
+                    <form class="formulario">
+                        <div>
+                            <label for="numero">Número de ciudad</label>
+                            <select name="numero" id="numero" class="numero">
+                                <option value="" disabled selected></option>
+                                <option value="Guadalajara">1</option>
+                                <option value="Tijuana">2</option>
+                                <option value="Culiacan">3</option>
+                                <option value="Toluca">4</option>
+                                <option value="Merida">5</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="tipo">Tipo de vehículo</label>
+                            <!-- <input type="text" class="tipo" id="tipo"> -->
+                            <select name="tipo" id="tipo" class="tipo">
+                                <option value="" disabled selected></option>
+                                <option value="Bicicleta">Bicicleta</option>
+                                <option value="Moto">Moto</option>
+                                <option value="Cuatrimoto">Cuatrimoto</option>
+                                <option value="Carro de golf">Carro de golf</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cantidad">Cantidad de Vehículos alquilados</label>
+                            <input type="text" class="cantidad" id="cantidad">
+                        </div>
+                        <div>
+                            <label for="horas">Total de horas de alquiler</label>
+                            <input type="text" class="horas" id="horas">
+                        </div>
+                        <div class="btn-g">
+                            <button class="btn guardar">Guardar datos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
